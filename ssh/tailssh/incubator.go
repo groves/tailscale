@@ -128,7 +128,7 @@ func (ss *sshSession) newIncubatorCommand() *exec.Cmd {
 	return exec.CommandContext(ss.ctx, ss.conn.srv.tailscaledPath, incubatorArgs...)
 }
 
-const debugIncubator = false
+const debugIncubator = true
 
 type stdRWC struct{}
 
